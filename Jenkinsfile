@@ -43,9 +43,9 @@ pipeline {
         success{
             echo  "Only when success"
         }
-    //    failure{
-    //        echo "Onlyu when failure"
-    //    }
+        failure{
+            echo "Onlyu when failure"
+        }
     }
 }
 
