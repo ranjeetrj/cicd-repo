@@ -11,10 +11,10 @@ pipeline {
         }
         stage('Test') {
             when {
-                branch 'feature/*'
+                branch 'dev/*'
             }
             steps {
-                  echo " Run test steps for feature branches"
+                  echo " Run test steps for dev branches"
             }
         }
         stage('Deploy') {
