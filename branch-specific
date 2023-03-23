@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            when {
+                branch 'main'
+            }
+            steps {
+                  echo "Run build steps for the master branch"
+            }
+        }
+        stage('Test') {
+            when {
+                branch 'feature/*'
+            }
+            steps {
+                  echo " Run test steps for feature branches"
+            }
+        }
+        stage('Deploy') {
+            when {
+                branch 'release/*'
+            }
+            steps {
+                // Deploy to production for release branches
+            }
+        }
+    }
+}
+
