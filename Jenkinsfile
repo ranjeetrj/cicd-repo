@@ -5,7 +5,6 @@ pipeline {
     }
     environment{
         NEW_VERSION = '1.3.3'
-        SERVER_CREDENTIALS = credentials('ranjeetrj')
     }
 
     stages {
