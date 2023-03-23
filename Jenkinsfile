@@ -30,7 +30,6 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 echo "Deploying with version ${NEW_VERSION}"
-                echo "Deploying with version ${SERVER_CREDENTIALS}"
             }
         }
     }
