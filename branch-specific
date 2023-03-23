@@ -6,7 +6,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                  echo "Run build steps for the master branch"
+                echo "Run build steps for the master branch"
             }
         }
         stage('Test') {
@@ -14,7 +14,7 @@ pipeline {
                 branch 'dev/*'
             }
             steps {
-                  echo " Run test steps for dev branches"
+                echo " Run test steps for dev branches"
             }
         }
         stage('Deploy') {
